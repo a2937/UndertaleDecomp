@@ -34,7 +34,8 @@ array_push(categories, new menu_category("Battle", "General Battle Settings",
 	
 array_push(categories, new menu_category("Accessibility", "Ease of Access Settings",
 	[
-	new menu_checkbox_option("Controls the TV Noise from Flowey Fight","DrawTVNoiseAnim","Enable to turn on the TV Noise during the Flowey Fight", global.decomp_vars.DrawTVNoiseAnim,false)
+	new menu_checkbox_option("Controls the TV Noise from Flowey Fight","DrawTVNoiseAnim","Enable to turn on the TV Noise during the Flowey Fight", global.decomp_vars.DrawTVNoiseAnim,false),
+	new menu_checkbox_option("Use Dyslexia Friendly Font","UseDyslexiaFriendlyFont","Use a Dyslexia friendly font ", global.decomp_vars.UseDyslexiaFriendlyFont,true)
 ]));
 	
 array_push(categories, new menu_category("Save Data", "Save Data Settings", 

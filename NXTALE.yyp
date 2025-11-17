@@ -632,6 +632,7 @@
     {"id":{"name":"fnt_comicsans","path":"fonts/fnt_comicsans/fnt_comicsans.yy",},},
     {"id":{"name":"fnt_curs","path":"fonts/fnt_curs/fnt_curs.yy",},},
     {"id":{"name":"fnt_dmg","path":"fonts/fnt_dmg/fnt_dmg.yy",},},
+    {"id":{"name":"fnt_dyslexia","path":"fonts/fnt_dyslexia/fnt_dyslexia.yy",},},
     {"id":{"name":"fnt_ja_comicsans_big","path":"fonts/fnt_ja_comicsans_big/fnt_ja_comicsans_big.yy",},},
     {"id":{"name":"fnt_ja_comicsans","path":"fonts/fnt_ja_comicsans/fnt_ja_comicsans.yy",},},
     {"id":{"name":"fnt_ja_curs","path":"fonts/fnt_ja_curs/fnt_ja_curs.yy",},},

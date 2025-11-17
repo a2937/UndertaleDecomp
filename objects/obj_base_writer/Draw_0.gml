@@ -417,6 +417,11 @@ while (n <= stringpos)
 				if (myletter == "J")
 					letterx -= 1
 			}
+			else if (myfont == "fnt_dyslexia")
+			{
+				if (myletter == "O")
+					letterx += 3
+			}
 		}
 		else if (global.language == "ja")
 		{
