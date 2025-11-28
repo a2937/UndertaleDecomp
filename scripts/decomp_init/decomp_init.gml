@@ -19,7 +19,8 @@ global.decomp_vars = {
 	ForceSoSorry : false,
 	QwertzInput : true,
 	DrawTVNoiseAnim: false,
-	UseDyslexiaFriendlyFont: true
+	UseDyslexiaFriendlyFont: true,
+	DisableShakeyName: true
 }
 
 #macro trace show_debug_message

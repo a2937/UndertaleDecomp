@@ -30,7 +30,15 @@ function scr_namingscreen()
 			if (kana_count > 1)
 				xx -= ((kana_count - 1) * (q / 10))
 		}
-		draw_text_transformed((xx + random((r * 2))), (((q / 2) + name_y) + random((r * 2))), string_hash_to_newline(charname), (1 + (q / 50)), (1 + (q / 50)), random_ranger((((-r) * q) / 60), ((r * q) / 60)))
+		if(global.decomp_vars.DisableShakeyName == false)
+		{
+			draw_text_transformed((xx + random((r * 2))), (((q / 2) + name_y) + random((r * 2))), string_hash_to_newline(charname), (1 + (q / 50)), (1 + (q / 50)), random_ranger((((-r) * q) / 60), ((r * q) / 60)))
+		}
+		else 
+		{
+			draw_text(xx, ((q / 2) + name_y), string_hash_to_newline(charname))
+		}
+	
 		if (alerm > 179)
 		{
 			instance_create(0, 0, obj_persistentfader)
@@ -123,7 +131,16 @@ function scr_namingscreen()
 			if (kana_count > 1)
 				xx -= ((kana_count - 1) * (q / 10))
 		}
-		draw_text_transformed((xx + random((r * 2))), (((q / 2) + name_y) + random((r * 2))), string_hash_to_newline(charname), (1 + (q / 50)), (1 + (q / 50)), random_ranger((((-r) * q) / 60), ((r * q) / 60)))
+		if(global.decomp_vars.DisableShakeyName == false)
+		{
+			draw_text_transformed((xx + random((r * 2))), (((q / 2) + name_y) + random((r * 2))), string_hash_to_newline(charname), (1 + (q / 50)), (1 + (q / 50)), random_ranger((((-r) * q) / 60), ((r * q) / 60)))
+		}
+		else 
+		{
+			draw_text((xx), ((q / 2) + name_y), string_hash_to_newline(charname))
+		}
+	
+	
 		draw_text(90, 30, string_hash_to_newline(spec_m))
 		draw_set_color(c_white)
 		if allow
@@ -167,7 +184,14 @@ function scr_namingscreen()
 					draw_set_color(c_yellow)
 				else
 					draw_set_color(c_white)
+				if(global.decomp_vars.DisableShakeyName == false)
+				{
 				draw_text((xx + random(r)), (yy + random(r)), string_hash_to_newline(charmap[row, col]))
+				}
+				else 
+				{
+					draw_text((xx), (yy), string_hash_to_newline(charmap[row, col]))
+				}
 			}
 		}
 		draw_set_color(c_white)
